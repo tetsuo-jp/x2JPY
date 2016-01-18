@@ -3,8 +3,9 @@
 require 'open-uri'
 require 'nokogiri'
 
-
-# 1currencyは何円か?
+# 2016/01/17 「I'm not a robot」「わたしはロボットではありません」というメッセージとともに
+#   表示される画像のチェックボックスをクリックしないと先に進まないことがあった
+# 1 通貨(currency)は何円か?
 def get_xjpy_from_google(currency)
   return @rate[currency] if not @rate.nil? and @rate[currency]
   @rate = {}
